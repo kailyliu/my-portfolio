@@ -96,7 +96,7 @@
 .mobileComponent {
     display: none;
     width: 90%;
-    margin-top: 45%;
+    margin-top: 40%;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
@@ -120,11 +120,20 @@
     .left {
         width: 90%;
     }
+
+    .mobileComponent {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 400px) {
     .links {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .mobileComponent {
+        display: block;
+        margin-top: 55%;
     }
 }
