@@ -1,0 +1,16 @@
+.all {
+    font-size: 1.8vh;
+}
+
+.intro {
+    margin-top: 12%;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image1, .image2 {
+    width: 48%;
+}

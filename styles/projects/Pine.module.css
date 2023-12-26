@@ -1,0 +1,23 @@
+.all {
+    font-size: 1.8vh;
+}
+
+.leo {
+    position: absolute;
+    width: 14%;
+    top: 0;
+    right: 10vw;
+}
+
+.intro {
+    margin-top: 5%;
+}
+
+.video {
+    align-items: center;
+}
+
+.iframe {
+    width: 100%;
+    height: 32vh
+}

@@ -1,0 +1,20 @@
+.all {
+    font-size: 1.8vh;
+}
+
+.intro {
+    margin-top: 12%;
+}
+
+.images {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image1 {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 0;
+}
+

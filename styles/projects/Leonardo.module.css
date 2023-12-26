@@ -1,0 +1,32 @@
+.all {
+    font-size: 1.8vh;
+}
+
+.leo {
+    position: absolute;
+    width: 14%;
+    top: 0;
+    right: 10vw;
+}
+
+.intro {
+    margin-top: 12%;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image1 {
+    width: 40%;
+}
+
+.image2 {
+    width: 20%;
+}
+
+.image3 {
+    width: 33%;
+}
+

@@ -1,0 +1,94 @@
+.main {
+    display: flex;
+}
+
+.left {
+    width: 40%;
+    padding-right: 0%;
+    font-family: 'Inconsolata', serif;
+    letter-spacing: -0.2vh;
+}
+
+.name {
+    margin-top: 10%;
+    font-weight: 100;
+    font-size: 2vh;
+    margin-bottom: 0;
+    margin-left: 10%;
+}
+
+.links {
+    display: flex; 
+    margin-left: 10%;
+}
+  
+.links a {
+    color: black; 
+    text-decoration: underline; 
+    font-size: 1.8vh;
+}
+
+.links a:hover {
+    font-style: italic;
+}
+  
+.links span {
+    color: black; 
+    margin: 0 8px; 
+    font-size: 1.8vh;
+}
+
+.leftContent1 {
+    margin-left: 44%;
+    margin-right: 1%;
+    width: 55%;
+    margin-top: 10%;
+    text-align: right;
+    font-size: 1.8vh;
+}
+
+.leftContent2 {
+    margin-left: 29%;
+    margin-right: 1%;
+    width: 70%;
+    margin-top: 2%;
+    text-align: right;
+    font-size: 1.8vh;
+}
+
+.leftContent3 {
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 1.8vh;
+}
+
+.divider {
+    margin-top: -20px;
+    pointer-events: none;
+    user-select: none;
+    width: 20%;
+}
+
+.right {
+    width: 40%;
+    font-family: 'Inconsolata', serif;
+    padding-left: 0%;
+    letter-spacing: -0.2vh;
+}
+
+.footerCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider2 {
+    max-width: 100%;
+    max-height: 100%;
+    width: 20%;
+    pointer-events: none;
+    user-select: none;
+}

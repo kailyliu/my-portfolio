@@ -1,0 +1,24 @@
+.year1 {
+    margin-top: 10%;
+}
+
+.year1, .year {
+    margin-right: 10%;
+    padding-left: 1%;
+    background-color: black;
+    color: white;
+    font-size: 2vh;
+}
+
+.project {
+    margin-left: 1%;
+    margin-bottom: 0;
+    margin-top: 0.1vh;
+    text-decoration: underline;
+    font-size: 1.8vh;
+}
+
+.project:hover {
+    cursor: pointer;
+    font-style: italic;
+}
