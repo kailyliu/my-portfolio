@@ -1,28 +1,56 @@
 import React, {useEffect, useState} from 'react';
 import styles from '../styles/Project.module.css'; 
 import projectsData from '../project-info/projectsData';
-import importProjectComponents from '../utils/importProjectComponents';
+
+import TwentyFortyEight from './projects/2048';
+import Benbook from './projects/benbook';
+import Congress from './projects/congress';
+import Dashboard from './projects/dashboard';
+import Dashboard2 from './projects/dashboard2';
+import Dsgn from './projects/dsgn';
+import Fnar from './projects/fnar';
+import Leonardo from './projects/leonardo';
+import Pine from './projects/pine';
+import Plotify from './projects/plotify';
+import Portfolio from './projects/portfolio';
+import Temps from './projects/temps';
+import TwitterBot from './projects/twitterbot';
 
 interface ProjectComponentProps {
   message: string;
   handleProjectClick: (value: string) => void;
 }
 
-const components = importProjectComponents((require as any).context('./projects', false, /\.tsx$/));
+const components = {
+  TwentyFortyEight,
+  Benbook,
+  Congress,
+  Dashboard,
+  Dashboard2,
+  Dsgn,
+  Fnar,
+  Leonardo,
+  Pine,
+  Plotify,
+  Portfolio,
+  Temps,
+  TwitterBot,
+};
+
 const componentToProjectMapping = {
-  "Leonardo" : "Leonardo DiCaprio Detector", 
-  "Pine" : "Pine - A Personalized News App",
-  "Dsgn" : "Final Portfolio - Art, Design, and Digital Culture",
-  "Temps" : "EDA and Prediction on Global Temperature Data Since 1750",
-  "Dashboard" : "Spotify Dashboard (Data)",
-  "Dashboard2" : "Spotify Dashboard",
-  "Benbook" : "BenBook - The Penn Facebook",
-  "Fnar" : "Final Portfolio - Drawing I",
-  "Plotify" : "Plotify",
-  "TwitterBot" : "Common Onion Twitter Bot",
-  "Congress" : "Understanding the Relationship Between Seniority and Congressional Committee", 
-  "TwentyFortyEight" : "Modified 2048", 
-  "Portfolio" : "kailyl.github.io"
+  "Leonardo DiCaprio Detector" : Leonardo, 
+  "Pine - A Personalized News App" : Pine,
+  "Final Portfolio - Art, Design, and Digital Culture" : Dsgn,
+  "EDA and Prediction on Global Temperature Data Since 1750" : Temps,
+  "Spotify Dashboard (Data)" : Dashboard,
+  "Spotify Dashboard" : Dashboard2,
+  "BenBook - The Penn Facebook" : Benbook,
+  "Final Portfolio - Drawing I" : Fnar,
+  "Plotify" : Plotify,
+  "Common Onion Twitter Bot" : TwitterBot,
+  "Understanding the Relationship Between Seniority and Congressional Committee" : Congress, 
+  "Modified 2048" : TwentyFortyEight, 
+  "kailyliu.com" : Portfolio
 }
 
 const ProjectComponent: React.FC<ProjectComponentProps> = ({ message, handleProjectClick }) => {
@@ -53,6 +81,9 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({ message, handleProj
   const previousProject = projectsData[(currentProjectIndex - 1 + projectsData.length) % projectsData.length];
   const nextProject = projectsData[(currentProjectIndex + 1) % projectsData.length];
 
+  const componentNameToShow = currentProject?.name; 
+  const ComponentToRender = componentToProjectMapping[componentNameToShow];
+
   return (
     <div>
       <main className={styles.main}>
@@ -73,11 +104,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({ message, handleProj
           <button onClick={handleClick} className={styles.home}>return</button>
         </div>
         <div className={styles.projectElement}>
-          {components.map((Component) => (
-            Component.default.name in componentToProjectMapping && 
-              componentToProjectMapping[Component.default.name] == currentProject?.name ? 
-            <Component.default/> : <div/>
-          ))}
+          {ComponentToRender && <ComponentToRender />}
         </div>
         <div className={styles.buttonsDiv}>
           <button onClick={goToPreviousProject} className={styles.left}>

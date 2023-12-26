@@ -5,7 +5,7 @@ const Portfolio: React.FC = () => {
   return (
     <div className={styles.all}>
         <p className={styles.intro}>
-            kailyl.github.io is this site! It's a website for me to showcase some of my work, and for 
+            kailyliu.com is this site! It's a website for me to showcase some of my work, and for 
             me to see how my work has evolved and developed. I update it relatively frequently and use it 
             to learn/practice web design, user interfaces, and programming in general. 
         </p>

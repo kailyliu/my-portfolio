@@ -57,11 +57,11 @@ const projectsData = [
         icon: '💻', 
         tools: 'Java', 
         github: 'https://github.com/kailyl/2048' },
-    { name: 'kailyl.github.io', 
+    { name: 'kailyliu.com', 
         year: '∞', 
         icon: '💻',
         tools: 'NextJS, Typescript, ReactJS', 
-        github: 'https://github.com/kailyl/kailyl.github.io' },
+        github: 'https://github.com/kailyl/my-portfolio' },
 ];
 
 export default projectsData;
