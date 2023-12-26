@@ -8,7 +8,7 @@ interface ProjectComponentProps {
   handleProjectClick: (value: string) => void;
 }
 
-const components = importProjectComponents(require.context('./projects', false, /\.tsx$/));
+const components = importProjectComponents((require as any).context('./projects', false, /\.tsx$/));
 const componentToProjectMapping = {
   "Leonardo" : "Leonardo DiCaprio Detector", 
   "Pine" : "Pine - A Personalized News App",
