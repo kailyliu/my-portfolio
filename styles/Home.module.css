@@ -96,11 +96,15 @@
 .mobileComponent {
     display: hidden;
     width: 90%;
-    margin-top: 5%;
+    margin-top: 45%;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
     font-size: 1.8vh;
+}
+
+.playlist {
+    color: black;
 }
 
 @media screen and (max-width: 900px) {
@@ -109,16 +113,12 @@
       flex-direction: column; 
     }
   
-    .divider, .divider2 {
+    .divider, .divider2, .leftContent1, .leftContent2, .leftContent3, .right {
       display: none; 
     }
 
     .left {
         width: 90%;
-    }
-  
-    .right {
-      display: none; 
     }
 }
 

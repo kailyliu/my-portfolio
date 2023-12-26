@@ -52,8 +52,11 @@ const Home: React.FC = () => {
             </p>
           </div>
           <div className={styles.mobileComponent}>
-            <p>It also seems like you're on a phone :( To see some of the stuff I've worked on, switch to 
-            a device with a larger screen.</p>
+            <p>It seems like you're on a phone :( To see some of the stuff I've worked on, switch to 
+            a device with a larger screen. In the meantime, consider giving your eyes a break and listening 
+            to {" "} 
+            <a href="https://open.spotify.com/playlist/1qaU1fxGk8HSwsPC8Y0MvQ?si=5a4d8ad0825b4caf" className={styles.playlist}>this playlist</a>
+            {" "}with some of my favorite songs</p>
           </div>
         </div>
         <img className={styles.divider} src="/images/book-graphic.png"/>
