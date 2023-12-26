@@ -1,5 +1,4 @@
 import React from 'react';
-import { Analytics } from '@vercel/analytics/react';
 import Head from 'next/head';
 import Home from '../components/home';
 
@@ -12,7 +11,6 @@ const IndexPage: React.FC = () => {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
-      <Analytics />
       <Home />
     </div>
   );
