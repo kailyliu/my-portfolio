@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     <div>
       <main className={styles.main}>
         <div className={styles.left}>
-          <p className={styles.name}> Kaily Liu 🤸‍♀️</p>
+          <p className={styles.name}> Kaily Liu</p>
           <div className={styles.links}>
             <a href="https://drive.google.com/file/d/14gHI7W3RUUGwAC63B53VnG0wWWlLUtJR/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a>
             <span>  /  </span>
@@ -50,6 +50,10 @@ const Home: React.FC = () => {
               to the landscape where technology can be used to enrich human experience, 
               fostering positive impact through thoughtful and purposeful creation.
             </p>
+          </div>
+          <div className={styles.mobileComponent}>
+            <p>It also seems like you're on a phone :( To see some of the stuff I've worked on, switch to 
+            a device with a larger screen.</p>
           </div>
         </div>
         <img className={styles.divider} src="/images/book-graphic.png"/>
