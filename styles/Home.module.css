@@ -94,7 +94,7 @@
 }
 
 .mobileComponent {
-    display: hidden;
+    display: none;
     width: 90%;
     margin-top: 45%;
     margin-left: 10%;
