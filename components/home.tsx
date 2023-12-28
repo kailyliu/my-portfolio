@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         <div className={styles.left}>
           <p className={styles.name}> Kaily Liu</p>
           <div className={styles.links}>
-            <a href="https://drive.google.com/file/d/14gHI7W3RUUGwAC63B53VnG0wWWlLUtJR/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a>
+            <a href="https://drive.google.com/file/d/1OQuLQnu6VDyq03D2pNA05K75MF7kFY9K/view?usp=drive_link" target="_blank" rel="noopener noreferrer">resume</a>
             <span>  /  </span>
             <a href="mailto:liukaily@seas.upenn.edu" target="_blank" rel="noopener noreferrer">mail</a>
             <span>  /  </span>
