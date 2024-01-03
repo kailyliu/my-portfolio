@@ -128,7 +128,6 @@
 
     .left {
         width: 90%;
-        font-size: 10px;
     }
 
     .name {
@@ -137,6 +136,10 @@
 
     .leftContent1 {
         margin-top: 5%;
+    }
+
+    .leftContent1, .leftContent2, .leftContent3 {
+        font-size: 1.8vh;
     }
     
     .divider, .divider2, .right {
