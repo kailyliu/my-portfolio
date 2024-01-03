@@ -21,7 +21,7 @@ const AllProjectsComponent: React.FC<AllProjectsComponentProps>  = ({ handleProj
                         <p className={index === 0 ? styles.year1 : styles.year}>{project.year}</p>
                     )}
                     <p className={styles.project} onClick={() => handleProjectClick(project.name)}>
-                    {project.icon} {project.name}
+                    <span style={{ fontSize: '0.7em' }}>{project.icon}</span> {project.name}
                     </p>
                 </div>
                 );

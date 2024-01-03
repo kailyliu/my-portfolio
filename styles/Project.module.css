@@ -3,7 +3,7 @@
     margin-right: 10%;
     font-family: 'Inconsolata', serif;
     padding-left: 0%;
-    letter-spacing: -0.2vh;
+    letter-spacing: -0.1em;
     height: 100vh;
     margin-top: -1.5%;
 }
@@ -12,8 +12,8 @@
     margin-top: 10%;
     display: flex;
     justify-content: space-between;
-    height: 5%;
-    font-size: 2vh;
+    height: 5em;
+    font-size: 1em;
 }
 
 .headerLeft {
@@ -21,26 +21,24 @@
 }
 
 .header {
-    font-size: 2vh;
+    font-size: 1.2em;
     margin-bottom: 0;
 }
 
 .tools {
     margin-top: 1%;
-    font-size: 1.8vh;
     margin-bottom: 0;
 }
 
 .github {
     color: black;
     margin-top: 1%;
-    font-size: 1.8vh;
 }
 
 .home {
     margin-top: 10%;
-    letter-spacing: -0.2vh;
-    font-size: 1.8vh;
+    letter-spacing: -0.1em;
+    font-size: 1em;
     text-decoration: underline;
 }
 
@@ -60,7 +58,7 @@
 }
 
 .left, .right {
-    font-size: 3vh;
+    font-size: 1.5em;
     width: 45%;
     display: flex;
     align-items: flex-start;
@@ -69,14 +67,14 @@
 
 .arrowTextLeft {
     text-align: left;
-    font-size: 1.6vh;
+    font-size: 0.6em;
     width: 90%;
     height: 100%;
 }
 
 .arrowTextRight {
     text-align: right;
-    font-size: 1.6vh;
+    font-size: 0.6em;
     width: 90%;
     height: 100%;
 }
@@ -88,7 +86,7 @@
 
 .projectElement {
     height: 73%;
-    margin-top: 5%;
+    margin-top: 1em;
     margin-bottom: 5%;
     border: 1px solid white;
 }

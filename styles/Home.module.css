@@ -6,13 +6,13 @@
     width: 40%;
     padding-right: 0%;
     font-family: 'Inconsolata', serif;
-    letter-spacing: -0.2vh;
+    letter-spacing: -0.1em;
 }
 
 .name {
     margin-top: 10%;
     font-weight: 100;
-    font-size: 2vh;
+    font-size: 1.3em;
     margin-bottom: 0;
     margin-left: 10%;
 }
@@ -20,12 +20,13 @@
 .links {
     display: flex; 
     margin-left: 10%;
+    flex-wrap: wrap;
 }
   
 .links a {
     color: black; 
     text-decoration: underline; 
-    font-size: 1.8vh;
+    font-size: 1em;
 }
 
 .links a:hover {
@@ -34,8 +35,7 @@
   
 .links span {
     color: black; 
-    margin: 0 8px; 
-    font-size: 1.8vh;
+    margin: 0 0.5em; 
 }
 
 .leftContent1 {
@@ -44,25 +44,22 @@
     width: 55%;
     margin-top: 10%;
     text-align: right;
-    font-size: 1.8vh;
 }
 
 .leftContent2 {
     margin-left: 29%;
     margin-right: 1%;
     width: 70%;
-    margin-top: 2%;
+    margin-top: 1em;
     text-align: right;
-    font-size: 1.8vh;
 }
 
 .leftContent3 {
     width: 90%;
-    margin-top: 10%;
+    margin-top: 5em;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
-    font-size: 1.8vh;
 }
 
 .divider {
@@ -76,7 +73,7 @@
     width: 40%;
     font-family: 'Inconsolata', serif;
     padding-left: 0%;
-    letter-spacing: -0.2vh;
+    letter-spacing: -0.1em;
 }
 
 .footerCenter {
@@ -96,44 +93,67 @@
 .mobileComponent {
     display: none;
     width: 90%;
-    margin-top: 40%;
+    margin-top: 20em;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
-    font-size: 1.8vh;
+    font-size: 1em;
 }
 
 .playlist {
     color: black;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .divider, .divider2, .leftContent1, .leftContent2, .leftContent3, .right {
+      display: none; 
+    }
+
+    .mobileComponent {
+        display: block;
+        margin-top: 55%;
+    }
+}
+
+@media screen and (max-height: 580px) {
     .main {
       display: flex;
       flex-direction: column; 
-    }
-  
-    .divider, .divider2, .leftContent1, .leftContent2, .leftContent3, .right {
-      display: none; 
     }
 
     .left {
         width: 90%;
     }
 
-    .mobileComponent {
-        display: block;
+    .name {
+        margin-top: 5%;
+    }
+
+    .leftContent1 {
+        margin-top: 5%;
+    }
+    
+    .divider, .divider2, .right {
+        display: none; 
     }
 }
 
-@media screen and (max-width: 400px) {
-    .links {
-        display: flex;
-        flex-wrap: wrap;
+@media screen and (max-width: 1000px) {
+    .main {
+      display: flex;
+      flex-direction: column; 
     }
 
-    .mobileComponent {
-        display: block;
-        margin-top: 55%;
+    .left {
+        width: 90%;
+    }
+    
+    .divider, .divider2, .right {
+        display: none; 
     }
 }

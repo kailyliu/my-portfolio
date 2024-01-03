@@ -1,7 +1,7 @@
 .photoGrid {
     margin-top: 5%;
     display: grid;
-    gap: 2vh;
+    gap: 1.2em;
 }
   
 .row {
@@ -16,7 +16,6 @@
 .gridItem p {
     margin-top: 0px;
     margin-bottom: 0;
-    font-size: 1.8vh;
 }
   
 .horizontal {

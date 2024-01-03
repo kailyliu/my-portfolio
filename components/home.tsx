@@ -27,6 +27,8 @@ const Home: React.FC = () => {
             <a href="https://www.pinterest.com/kailyliu/" target="_blank" rel="noopener noreferrer">pinterest</a>
             <span>  /  </span>
             <a href="https://www.are.na/kaily-liu" target="_blank" rel="noopener noreferrer">are.na</a>
+            <span>  /  </span>
+            <a href="https://www.linkedin.com/in/kaily-liu/" target="_blank" rel="noopener noreferrer">linkedin</a>
           </div>
           <div className={styles.leftContent1}>
             <p> Currently, I'm a third year student at Penn studying Networked and Social Systems 
@@ -52,8 +54,8 @@ const Home: React.FC = () => {
             </p>
           </div>
           <div className={styles.mobileComponent}>
-            <p>It seems like you're on a phone :( To see some of the stuff I've worked on, switch to 
-            a device with a larger screen. In the meantime, consider giving your eyes a break and listening 
+            <p>It seems like you're using a phone (or some other small display). To see some of the stuff I've worked on, switch to 
+            a device with a larger screen size. In the meantime, consider giving your eyes a break and listening 
             to {" "} 
             <a href="https://open.spotify.com/playlist/1qaU1fxGk8HSwsPC8Y0MvQ?si=5a4d8ad0825b4caf" className={styles.playlist}>this playlist</a>
             {" "}with some of my favorite songs</p>
