@@ -1,12 +1,12 @@
 .leo {
     position: absolute;
     width: 14%;
-    top: 0;
-    right: 10vw;
+    top: -2em;
+    right: 7vw;
 }
 
 .intro {
-    margin-top: 5%;
+    margin-top: 0%;
 }
 
 .images {

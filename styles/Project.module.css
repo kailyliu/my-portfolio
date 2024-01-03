@@ -44,12 +44,14 @@
 
 .buttonsDiv {
     display: flex;
+    margin-top: 1em;
     justify-content: space-between;
 }
 
 .home, .left, .right {
     appearance: none;
     background-color: transparent;
+    color: black;
     border: none;
     margin: 0;
     padding: 0;
@@ -59,7 +61,7 @@
 
 .left, .right {
     font-size: 1.5em;
-    width: 45%;
+    width: 50%;
     display: flex;
     align-items: flex-start;
     height: 100%;
@@ -70,6 +72,7 @@
     font-size: 0.6em;
     width: 90%;
     height: 100%;
+    margin-left: 0px;
 }
 
 .arrowTextRight {
@@ -77,16 +80,18 @@
     font-size: 0.6em;
     width: 90%;
     height: 100%;
+    margin-right: 0px;
 }
 
 .arrowIcon {
-    margin-top: -3.5%;
+    margin-top: 0;
     width: 10%;
+    font-size: 0.6em;
 }
 
 .projectElement {
-    height: 73%;
-    margin-top: 1em;
-    margin-bottom: 5%;
+    height: 70%;
+    margin-top: 3em;
+    margin-bottom: 0.2em;
     border: 1px solid white;
 }

@@ -1,12 +1,5 @@
-.leo {
-    position: absolute;
-    width: 14%;
-    top: 0;
-    right: 10vw;
-}
-
 .intro {
-    margin-top: 5%;
+    margin-top: 0%;
 }
 
 .video {
@@ -14,6 +7,7 @@
 }
 
 .iframe {
-    width: 100%;
-    height: 20em
+    margin-left: 15%;
+    width: 70%;
+    height: 15em
 }

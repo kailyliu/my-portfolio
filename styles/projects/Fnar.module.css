@@ -1,5 +1,5 @@
 .photoGrid {
-    margin-top: 5%;
+    margin-top: -2em;
     display: grid;
     gap: 1.2em;
 }

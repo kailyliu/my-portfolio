@@ -1,0 +1,28 @@
+.rightSideTablet {
+    margin-left: 10%;
+}
+
+.rightSideButton {
+    appearance: none;
+    background-color: transparent;
+    color: black;
+    font-family: 'Inconsolata', serif;
+    letter-spacing: -0.1em;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid orange;
+    margin-top: 5%;
+    border: none;
+    text-align: left;
+}
+
+.arrowIconPortfolioLeft {
+    margin-left: 0%;
+    font-size: 1.4em;
+}
+
+.arrowIconPortfolioRight {
+    margin-right: 0;
+    margin-left: 99%;
+    font-size: 1.4em;
+}

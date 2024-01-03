@@ -15,7 +15,7 @@ const Leonardo: React.FC = () => {
       </p>
       <p className={styles.body}> Utilizing Multi-task Cascaded Convolutional Networks (MTCNN) for face detection 
       and fine-tuning Inception ResNet V1, we developed a model which reached a 94.7% accuracy in identifying 
-      DiCaprio’s distinctive facial features.
+      DiCaprio’s features.
       </p>
       <p className={styles.body}> We then integrated the model into a real time streaming system which continuously 
       processes frames from the live video stream, detects faces using MTCNN or Haar Cascade Classifiers, and applies our 

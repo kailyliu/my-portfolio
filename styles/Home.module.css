@@ -100,64 +100,94 @@
     font-size: 1em;
 }
 
+.tabletComponent {
+    display: none;
+}
+
 .playlist {
     color: black;
 }
 
-@media screen and (max-width: 500px) {
-    .links {
+@media screen and (max-aspect-ratio: 10/11) {
+    .main {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
-    .divider, .divider2, .leftContent1, .leftContent2, .leftContent3, .right {
+    .left {
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    .divider, .divider2, .right {
+        display: none; 
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .tabletComponent {
+        display: block;
+    }
+}
+
+@media screen and (min-aspect-ratio: 2) {
+    .divider, .divider2, .leftContent1, .leftContent2, .leftContent3, .right, .links, .name, .tabletComponent {
+        display: none; 
+    }
+  
+    .left {
+        margin-left: 10vw;
+        width: 80vw;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .mobileComponent {
+        display: block;
+        margin: 0;
+        font-size: 20px;
+        width: 100%;
+    }
+  
+    .hidden {
+        display: block;
+    }
+}
+
+@media screen and ((max-height: 450px) or (max-width: 450px)) {
+    .divider, .divider2, .leftContent1, .leftContent2, .leftContent3, .right, .links, .name {
       display: none; 
+    }
+
+    .left {
+        margin-left: 10vw;
+        width: 80vw;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .mobileComponent {
         display: block;
-        margin-top: 55%;
-    }
-}
-
-@media screen and (max-height: 580px) {
-    .main {
-      display: flex;
-      flex-direction: column; 
+        margin: 0;
+        font-size: 20px;
+        width: 100%;
     }
 
-    .left {
-        width: 90%;
+    .tabletComponent {
+        display: none;
     }
 
-    .name {
-        margin-top: 5%;
-    }
-
-    .leftContent1 {
-        margin-top: 5%;
-    }
-
-    .leftContent1, .leftContent2, .leftContent3 {
-        font-size: 1.8vh;
-    }
-    
-    .divider, .divider2, .right {
-        display: none; 
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .main {
-      display: flex;
-      flex-direction: column; 
-    }
-
-    .left {
-        width: 90%;
-    }
-    
-    .divider, .divider2, .right {
-        display: none; 
+    .hidden {
+        display: block;
     }
 }

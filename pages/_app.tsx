@@ -6,7 +6,8 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const handleResize = () => {
-      document.body.style.fontSize = window.innerHeight * 0.017 + 'px';
+      const minSize = Math.min(window.innerHeight, window.innerWidth);
+      document.body.style.fontSize = minSize * 0.017 + 'px';
     };
 
     const resizeObserver = new ResizeObserver(handleResize);
