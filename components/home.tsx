@@ -57,9 +57,7 @@ const Home: React.FC = () => {
               <p> In the future, I want to code cool products that 
                 explore the intersection of humanity and technology, 
                 specifically in the realms of social impact, 
-                digital media, and design. My goal is to contribute meaningfully 
-                to the landscape where technology can be used to enrich human experiences, 
-                fostering positive impact through thoughtful and purposeful creation.
+                digital media, and design.
               </p>
             </div>
             <div className={styles.mobileComponent}>
