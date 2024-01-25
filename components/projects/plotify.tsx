@@ -25,7 +25,7 @@ const Plotify: React.FC = () => {
             <img className={styles.image1} src="/plotify-images/plotify2.gif"/>
         </div>
         <p className={styles.last}>
-            View the site <a className={styles.link} href="https://kailys-spotify-dashboard.herokuapp.com/">here</a>.
+            View the site <a className={styles.link} href="https://plotify-app.github.io/">here</a>.
         </p>
     </div>
   );
