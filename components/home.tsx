@@ -27,15 +27,9 @@ const Home: React.FC = () => {
             <div className={styles.links}>
               <a href="https://drive.google.com/file/d/1OQuLQnu6VDyq03D2pNA05K75MF7kFY9K/view?usp=drive_link" target="_blank" rel="noopener noreferrer">resume</a>
               <span>  /  </span>
-              <a href="mailto:liukaily@seas.upenn.edu" target="_blank" rel="noopener noreferrer">mail</a>
+              <a href="mailto:liukaily@seas.upenn.edu" target="_blank" rel="no opener noreferrer">mail</a>
               <span>  /  </span>
               <a href="https://github.com/kailyl" target="_blank" rel="noopener noreferrer">github</a>
-              <span>  /  </span>
-              <a href="https://open.spotify.com/user/kailyliu" target="_blank" rel="noopener noreferrer">spotify</a>
-              <span>  /  </span>
-              <a href="https://www.pinterest.com/kailyliu/" target="_blank" rel="noopener noreferrer">pinterest</a>
-              <span>  /  </span>
-              <a href="https://www.are.na/kaily-liu" target="_blank" rel="noopener noreferrer">are.na</a>
               <span>  /  </span>
               <a href="https://www.linkedin.com/in/kaily-liu/" target="_blank" rel="noopener noreferrer">linkedin</a>
             </div>
